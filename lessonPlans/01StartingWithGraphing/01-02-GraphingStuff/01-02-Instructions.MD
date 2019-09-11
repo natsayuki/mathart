@@ -1,4 +1,4 @@
-# 01-02 Graphing Stuff
+# 01-02 | Graphing Stuff
 
 1. Create project folder, index, and script
 1. Add `<DOCTYPE>` and `<meta>` tags this time as well as `lang` attribute in the `<html>` tag
