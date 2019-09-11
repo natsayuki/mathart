@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>correction example</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="600" style="border: 1px solid black"></canvas>
+    <script src="../src/correction.js"></script>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.flip();
+
+      const a = createSlider(2, 0, 15, "a");
+
+      ctx.fillStyle = 'blue';
+
+
+      let y = 1;
+      function main(){
+        ctx.clear();
+        ctx.graph(x => ((x+y)%600));
+        ctx.graph(x => ((x+y+200)%600));
+        ctx.graph(x => ((x+y+400)%600));
+        ctx.graph(x => ((x+y-200)%600));
+        ctx.graph(x => ((x+y-400)%600));
+        ctx.graph(x => ((x-200)**a.value()) + 200)
+        ctx.fillRect(0, 0, 20 * a.value(), 20 * a.value());
+        y+=a.value();
+      }
+    </script>
+  </body>
+</html>
