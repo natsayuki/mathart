@@ -6,7 +6,7 @@
 1. Add canvas element
 1. Make a script.js file
 1. Link it with script tag
-  1. Explain attributes
+    1. Explain attributes
 1. Log hello world
 1. Show how to open console
 1. Add ID to canvas
