@@ -14,3 +14,6 @@
 1. Make context 2d
 1. FillRect
 1. change fillStyle
+1. Flip context
+    1. Show example of simply subtracting (canvas height - y) and why it doesn't work
+    1. Explain what the translate is doing
